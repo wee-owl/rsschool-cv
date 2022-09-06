@@ -14,3 +14,24 @@ Recently, I wanted to change my occupation and do front-end development. I am cu
 - **IDE:** IntelliJ IDEA, VS Code  
 - **VCS:** Git, GitHub  
 
+## Code examples  
+[Codewars](https://www.codewars.com/) task «Power of two»: write a function that determines whether a given non-negative integer is a power of two.  
+
+```js script
+let isPowerOfTwo = (n) => n%2 !== 0 ? false : n === 2**Math.log2(n) ? true : false
+```
+
+## Education  
+1. National university of science and technology «MISIS», Moscow  
+2. Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow  
+
+## Courses  
+* [RS School](https://rs.school/) course:  
+    + Java Script/Front-end. Stage 0  
+    + Java Script/Front-end. Stage 1 (in progress)  
+* [Netology](https://netology.ru/) course:  
+    + Front-end developer (in progress)  
+
+## Languages  
+Russian  –  native  
+English  –  intermediate (B1)  
