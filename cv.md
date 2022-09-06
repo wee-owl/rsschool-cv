@@ -21,6 +21,11 @@ Recently, I wanted to change my occupation and do front-end development. I am cu
 let isPowerOfTwo = (n) => n === 0 ? false : n === 1 ? true : n%2 !== 0 ? false : n === 2**Math.log2(n) ? true : false
 ```
 
+## Projects  
+- ["The Batman project"](https://wee-owl.github.io/The-Batman-Project/)  
+- ["E-Trans"](https://wee-owl.github.io/E-Trans/)  
+- ["Photo Stream"](https://photo-stream-wee-owl.vercel.app/)  
+
 ## Education  
 1. National university of science and technology «MISIS», Moscow  
 2. Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow  
