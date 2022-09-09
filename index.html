@@ -40,61 +40,67 @@
             <nav class="burger__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#about_" class="nav__link">about</a>
+                        <a href="#about" class="nav__link">about</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#education_" class="nav__link">education</a>
+                        <a href="#education" class="nav__link">education</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#experience_" class="nav__link">experience</a>
+                        <a href="#skills" class="nav__link">skills</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills_" class="nav__link">skills</a>
+                        <a href="#projects" class="nav__link">projects</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects_" class="nav__link">projects</a>
+                        <a href="#experience" class="nav__link">experience</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contacts_" class="nav__link">contacts</a>
+                        <a href="#contacts" class="nav__link">contacts</a>
                     </li>
                 </ul>
             </nav>
     </header>
-    <h1 class="h1__block" hidden>Labor omnia vincit</h1>
-    <div class="cv__content">
-        <aside class="aside">
+    <main class="main">
+        <div class="left__block">
             <section class="avatar">
                 <img src="img/avatar.jpg" alt="Avatar" width="150" height="150">
-                <h2 class="aside__title">elena korobova</h2>
+                <h1 class="aside__title">elena korobova</h1>
                 <h2 class="aside__subtitle">junior front-end developer</h2>
             </section>
-            <section class="about" id="about">
+            <section class="experience" id="experience">
                 <div class="title__wrap">
-                    <img src="img/about.svg" alt="About" width="150" height="100">
+                    <img src="img/experience.svg" alt="Experience" width="150" height="100">
                     <div class="title__block">
-                        <h2 class="title">about</h2>
+                        <h2 class="title">experience</h2>
                     </div>
                 </div>
-                Last year I discovered the field of front-end development. I attend many online courses and webinars. I have been studying this profession at the Netology school  for about six months and at the same time I am improving my qualifications at the RSSchool. 
-                Frontend is perhaps the most interesting direction, it allows you to develop programming and design skills. With great pleasure I devote all my free time to this.
-            </section>
-            <section class="education" id="education">
-                <div class="title__wrap">
-                    <img src="img/education.svg" alt="Education" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">education</h2>
-                    </div>
-                </div>
-                <ul class="edu__list">
-                    <li class="edu__item">
-                        <p class="univ">Engineer in the field of control and informatics in technical systems</p>
-                        <p>National university of science and technology «MISIS», Moscow</p>
+                <div class="decor__line"></div>
+                <ul class="exp__list">
+                    <li class="exp__item">
+                        <p class="exp__study"><a href="https://rs.school/" target="_blank">RS School course:</a></p>
+                        <p>Java Script/Front-end. Stage 0</p>
+                        <p>Java Script/Front-end. Stage 1 (in progress)</p>
                     </li>
                     <li>
-                        <p class="univ">Master’s degree in information systems and technology</p>
-                        <p>Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow</p>
+                        <p class="exp__study"><a href="https://netology.ru/" target="_blank">Netology course:</a></p>
+                        <p>Front-end developer (in progress)</p>
                     </li>
                 </ul>
+            </section>
+            <section class="code">
+                <div class="title__wrap">
+                    <img src="img/about.svg" alt="Code" width="150" height="100">
+                    <div class="title__block">
+                        <h2 class="title">code</h2>
+                    </div>
+                </div>
+                <div class="decor__line"></div>
+                <div class="code__example">
+                    <p class="codewars"><a href="https://www.codewars.com/" target="_blank">Codewars</a> task «Power of two»: write a function that determines whether a given non-negative integer is a power of two.</p>
+                    <code>
+                        let isPowerOfTwo = (n) => n === 0 ? false : n === 1 ? true : n%2 !== 0 ? false : n === 2**Math.log2(n) ? true : false
+                    </code>
+                </div>
             </section>
             <section class="language">
                 <div class="title__wrap">
@@ -103,14 +109,19 @@
                         <h2 class="title">language</h2>
                     </div>
                 </div>
+                <div class="decor__line"></div>
                 <div class="lang">
-                    <p>russian (native)</p>
-                    <div class="lang__box">
-                        <div class="lang__item ru">100%</div>
+                    <div class="lang__items">
+                        <p>russian (native)</p>
+                        <div class="lang__box">
+                            <div class="lang__item ru">100%</div>
+                        </div>
                     </div>
-                    <p>english</p>
-                    <div class="lang__box">
-                        <div class="lang__item en">70%</div>
+                    <div class="lang__items">
+                        <p>english</p>
+                        <div class="lang__box">
+                            <div class="lang__item en">70%</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -121,6 +132,7 @@
                         <h2 class="title">contacts</h2>
                     </div>
                 </div>
+                <div class="decor__line"></div>
                 <ul class="contacts__list">
                     <li class="contacts__item">
                         <a href="https://github.com/wee-owl/" target="_blank" class="link">
@@ -140,25 +152,40 @@
                     </li>
                 </ul>
             </section>
-        </aside>
-        <main class="main">
-            <section class="experience" id="experience">
+        </div>
+        <div class="right__block">
+            <section class="avatar768">
+                <img src="img/avatar.jpg" alt="Avatar" width="150" height="150">
+                <h1 class="aside__title">elena korobova</h1>
+                <h2 class="aside__subtitle">junior front-end developer</h2>
+            </section>
+            <section class="about" id="about">
                 <div class="title__wrap">
-                    <img src="img/experience.svg" alt="Experience" width="150" height="100">
+                    <img src="img/about.svg" alt="About" width="150" height="100">
                     <div class="title__block">
-                        <h2 class="title">experience</h2>
+                        <h2 class="title">about</h2>
                     </div>
                 </div>
                 <div class="decor__line"></div>
-                <ul class="exp__list">
-                    <li class="exp__item">
-                        <p class="exp__study"><a href="https://rs.school/" target="_blank">RS School course:</a></p>
-                        <p>Java Script/Front-end. Stage 0</p>
-                        <p>Java Script/Front-end. Stage 1 (in progress)</p>
+                Last year I discovered the field of front-end development. I attend many online courses and webinars. I have been studying this profession at the Netology school  for about six months and at the same time I am improving my qualifications at the RSSchool. 
+                Frontend is perhaps the most interesting direction, it allows you to develop programming and design skills. With great pleasure I devote all my free time to this.
+            </section>
+            <section class="education" id="education">
+                <div class="title__wrap">
+                    <img src="img/education.svg" alt="Education" width="150" height="100">
+                    <div class="title__block">
+                        <h2 class="title">education</h2>
+                    </div>
+                </div>
+                <div class="decor__line"></div>
+                <ul class="edu__list">
+                    <li class="edu__item">
+                        <p class="univ">Engineer in the field of control and informatics in technical systems</p>
+                        <p>National university of science and technology «MISIS», Moscow</p>
                     </li>
                     <li>
-                        <p class="exp__study"><a href="https://netology.ru/" target="_blank">Netology course:</a></p>
-                        <p>Front-end developer (in progress)</p>
+                        <p class="univ">Master’s degree in information systems and technology</p>
+                        <p>Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow</p>
                     </li>
                 </ul>
             </section>
@@ -233,21 +260,6 @@
                     </li>
                 </ul>
             </section>
-            <section class="code">
-                <div class="title__wrap">
-                    <img src="img/about.svg" alt="Code" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">code</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <div class="code__example">
-                    <p class="codewars"><a href="https://www.codewars.com/" target="_blank">Codewars</a> task «Power of two»: write a function that determines whether a given non-negative integer is a power of two.</p>
-                    <code>
-                        let isPowerOfTwo = (n) => n === 0 ? false : n === 1 ? true : n%2 !== 0 ? false : n === 2**Math.log2(n) ? true : false
-                    </code>
-                </div>
-            </section>
             <section class="projects" id="projects">
                 <div class="title__wrap">
                     <img src="img/projects.svg" alt="Projects" width="150" height="100">
@@ -307,260 +319,8 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <div class="main768">
-            <section class="avatar">
-                <img src="img/avatar.jpg" alt="Avatar" width="150" height="150">
-                <h2 class="aside__title">elena korobova</h2>
-                <h2 class="aside__subtitle">junior front-end developer</h2>
-            </section>
-            <section class="about" id="about_">
-                <div class="title__wrap">
-                    <img src="img/about.svg" alt="About" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">about</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                Last year I discovered the field of front-end development. I attend many online courses and webinars. I have been studying this profession at the Netology school  for about six months and at the same time I am improving my qualifications at the RSSchool. 
-                Frontend is perhaps the most interesting direction, it allows you to develop programming and design skills. With great pleasure I devote all my free time to this.
-            </section>
-            <section class="education" id="education_">
-                <div class="title__wrap">
-                    <img src="img/education.svg" alt="Education" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">education</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <ul class="edu__list">
-                    <li class="edu__item">
-                        <p class="univ">Engineer in the field of control and informatics in technical systems</p>
-                        <p>National university of science and technology «MISIS», Moscow</p>
-                    </li>
-                    <li>
-                        <p class="univ">Master’s degree in information systems and technology</p>
-                        <p>Federal state budget educational institution of higher education «MIREA – Russian Technological University», Moscow</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="experience" id="experience_">
-                <div class="title__wrap">
-                    <img src="img/experience.svg" alt="Experience" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">experience</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <ul class="exp__list">
-                    <li class="exp__item">
-                        <p class="exp__study"><a href="https://rs.school/" target="_blank">RS School course:</a></p>
-                        <p>Java Script/Front-end. Stage 0</p>
-                        <p>Java Script/Front-end. Stage 1 (in progress)</p>
-                    </li>
-                    <li>
-                        <p class="exp__study"><a href="https://netology.ru/" target="_blank">Netology course:</a></p>
-                        <p>Front-end developer (in progress)</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="skills" id="skills_">
-                <div class="title__wrap">
-                    <img src="img/skills.svg" alt="Skills" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">skills</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <ul class="skills__box">
-                    <li class="skills__item">
-                        <p>html</p>
-                        <div class="skills__band">
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square"></span>
-                        </div>
-                    </li>
-                    <li class="skills__item">
-                        <p>css</p>
-                        <div class="skills__band">
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                        </div>
-                    </li>
-                    <li class="skills__item">
-                        <p>javascript</p>
-                        <div class="skills__band">
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                        </div>
-                    </li>
-                    <li class="skills__item">
-                        <p>mysql</p>
-                        <div class="skills__band">
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square checked"></span>
-                            <span class="square"></span>
-                            <span class="square"></span>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="code">
-                <div class="title__wrap">
-                    <img src="img/about.svg" alt="Code" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">code</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <div class="code__example">
-                    <p class="codewars"><a href="https://www.codewars.com/" target="_blank">Codewars</a> task «Power of two»: write a function that determines whether a given non-negative integer is a power of two.</p>
-                    <code>
-                        let isPowerOfTwo = (n) => n === 0 ? false : n === 1 ? true : n%2 !== 0 ? false : n === 2**Math.log2(n) ? true : false
-                    </code>
-                </div>
-            </section>
-            <section class="projects" id="projects_">
-                <div class="title__wrap">
-                    <img src="img/projects.svg" alt="Projects" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">projects</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <div class="projects__container">
-                    <div class="projects__item">
-                        <img src="img/travel__potral.png" alt="Travel portal" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://wee-owl.github.io/TravelPortal/" target="_blank" class="project__title">
-                                travel portal
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img src="img/noemi.png" alt="Noemi" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://wee-owl.github.io/Noemi/" target="_blank" class="project__title">
-                                noemi
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img src="img/photo__stream.png" alt="Photo Stream" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://photo-stream-wee-owl.vercel.app/" target="_blank" class="project__title">
-                                photo stream
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img src="img/tetris.png" alt="Tetris" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://wee-owl.github.io/Tetris/" target="_blank" class="project__title">
-                                tetris
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img src="img/e-trans.png" alt="E-Trans" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://wee-owl.github.io/E-Trans/" target="_blank" class="project__title">
-                                e-trans
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img src="img/batman.png" alt="The Batman" class="project__img" width="250" height="150">
-                        <div class="project__dim">
-                            <a href="https://wee-owl.github.io/The-Batman-Project/" target="_blank" class="project__title">
-                                the batman
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="language">
-                <div class="title__wrap">
-                    <img src="img/language.svg" alt="Language" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">language</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <div class="lang">
-                    <div class="lang__items">
-                        <p>russian (native)</p>
-                        <div class="lang__box">
-                            <div class="lang__item ru">100%</div>
-                        </div>
-                    </div>
-                    <div class="lang__items">
-                        <p>english</p>
-                        <div class="lang__box">
-                            <div class="lang__item en">70%</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contacts" id="contacts_">
-                <div class="title__wrap">
-                    <img src="img/contacts.svg" alt="Contacts" width="150" height="100">
-                    <div class="title__block">
-                        <h2 class="title">contacts</h2>
-                    </div>
-                </div>
-                <div class="decor__line"></div>
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <a href="https://github.com/wee-owl/" target="_blank" class="link">
-                            <img src="img/github.svg" width="40" height="40" alt="Github"><span>Github</span>
-                        </a>
-                        <a href="https://discordapp.com/users/917321743746609183/" target="_blank" class="link">
-                            <img src="img/discord.svg" width="40" height="40" alt="Discord"><span>Discord</span>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="mailto:kem-cv@yandex.ru" target="_blank" class="link">
-                            <img src="img/email.png" width="40" height="40" alt="E-mail"><span>E-mail</span>
-                        </a>
-                        <a href="https://goo.gl/maps/rYSivSb9iDobd3c37" target="_blank" class="link">
-                            <img src="img/location.png" width="40" height="40" alt="Location"><span>Moscow</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
         </div>
-    </div>
+    </main>
     <footer class="footer">
             <div class="footer__logo">
                 <a href="https://rs.school/js/" target="_blank">

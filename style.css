@@ -87,33 +87,25 @@ body {
     background-size: 100% 2px;
 }
 
-.burger__nav, .main768 {
+.burger__nav {
     display: none;
 }
 
-.h1__block {
-    margin: 20px auto;
-    font-size: 12px;
-    text-align: center;
-    color: #38454f;
-}
-
-.cv__content {
+.main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 25px;
+    padding: 50px 30px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 60px;
     color: #38454f;
 }
 
-.aside {
-    max-width: 35%;
+.left__block {
+    max-width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    text-align: justify;
+    gap: 60px;
 }
 
 .avatar {
@@ -123,6 +115,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.avatar768 {
+    display: none;
 }
 
 .aside__title {
@@ -277,12 +273,11 @@ body {
     align-items: center;
 }
 
-.main {
-    max-width: 75%;
+.right__block {
+    max-width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    text-align: justify;
+    gap: 60px;
 }
 
 .skills__box {
@@ -486,25 +481,31 @@ body {
         background: #2e434eeb;
     }
 
-    .cv__content {
+    .main {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .aside, .main {
+    .left__block {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .right__block {
+        max-width: 100%;
+    }
+
+    .avatar {
         display: none;
     }
 
-    .main768 {
+    .avatar768 {
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        text-align: justify;
-    }
-
-    .edu__list, .exp__list {
-        flex-direction: row;
-        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .lang {
@@ -526,5 +527,11 @@ body {
 
     .contacts__item {
         flex-direction: row;
+    }
+}
+
+@media (max-width: 428px) {
+    .decor__line {
+        display: none;
     }
 }
