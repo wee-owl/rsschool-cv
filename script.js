@@ -2,15 +2,15 @@
 
 const burgerButton = document.querySelector('.burger__button');
 const burgerNav = document.querySelector('.burger__nav');
-const navLink = document.querySelector('.nav__link');
+const overlay = document.querySelector('.overlay');
 
-burgerButton.onclick = function() {
+burgerButton.addEventListener('click', () => {
     burgerButton.classList.toggle('active');
     burgerNav.classList.toggle('nav__active');
-};
+});
 
-document.addEventListener('click', function(e) {
-    if (e.target.closest('.nav__link') !== null) {
+document.addEventListener('click', (e) => {
+    if ( e.target.closest('.nav__item a') || e.target === overlay ) {
         burgerButton.classList.remove('active');
         burgerNav.classList.remove('nav__active');
     };
