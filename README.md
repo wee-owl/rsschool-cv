@@ -1,1 +1,3 @@
-# rsschool-cv
+## RSschool-cv-task
+https://wee-owl.github.io/rsschool-cv/cv  
+https://wee-owl.github.io/rsschool-cv/  
