@@ -62,10 +62,12 @@ body {
 }
 
 .nav__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    z-index: 1;
 }
 
 .nav__item {
@@ -257,6 +259,11 @@ body {
     font-weight: 600;
 }
 
+.exp__study {
+    position: relative;
+    z-index: 1;
+}
+
 .exp__study a {
     font-size: 20px;
     font-weight: 600;
@@ -273,10 +280,12 @@ body {
 }
 
 .link {
+    position: relative;
     display: flex;
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1;
 }
 
 .right__block {
@@ -323,6 +332,11 @@ body {
     gap: 15px;
 }
 
+.codewars {
+    position: relative;
+    z-index: 1;
+}
+
 .codewars a {
     font-weight: 600;
     text-decoration: none;
@@ -352,6 +366,7 @@ body {
     position: relative;
     display: flex;
     max-width: 300px;
+    z-index: 1;
 }
 
 .project__img {
@@ -407,10 +422,12 @@ body {
 }
 
 .footer__logo {
+    position: relative;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
     color: #ffffff;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -540,8 +557,8 @@ body {
     .decor__line {
         display: none;
     }
-    
-        .lang {
+
+    .lang {
         flex-wrap: wrap;
     }
 }
