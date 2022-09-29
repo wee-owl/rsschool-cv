@@ -540,4 +540,8 @@ body {
     .decor__line {
         display: none;
     }
+    
+        .lang {
+        flex-wrap: wrap;
+    }
 }
